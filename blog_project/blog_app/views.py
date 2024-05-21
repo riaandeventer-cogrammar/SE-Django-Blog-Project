@@ -12,7 +12,7 @@ def index(request):
 
 def add_post(request):
     if request.method == 'POST':
-        author = request.POST.get['author']
+        author = request.POST.get('author')
         title = request.POST.get('title')
         content = request.POST.get('content')
         # Below is the ORM to create a new post record in the BlogPost table
